@@ -21,6 +21,22 @@
         border-radius: 10px;
       }
     }
+    @media @mobile{
+  
+      .text-content{
+       
+       width: 50%;
+       h2{
+         font-size: 20px;
+         padding-left: 4px;
+       }
+        p{
+          font-size: 11px;
+          padding-left: 4px;
+        }
+      }
+    
+    }
   }
 
   .inverse-content {
@@ -55,21 +71,36 @@
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       .btn{
-        .button-signup(20px, white,  @eastern-blue, 20px, center, 10px 10px 10px 10px);
-          
+        .button-signup(10px, white,  @eastern-blue, 20px, center, 10px 1px 10px 1px, 80%);
+          @media @mobile{
+            .button-signup(5px, white, @eastern-blue, 12px, center, 5px 1px 5px 1px, 80%)
+          }
         
       }
+    }
+    @media @mobile{
+      .destination{
+        padding-left: 10px;
+        width: 30%;
+        h4{
+          font-size: 16px;
+          padding-left: 4px;
+        }
+        p{
+          font-size: 12px;
+          padding-left: 4px;
+        }
+      }
+      
     }
   }
 }// home
 .header{
   border-bottom: 2px dashed gray;
   // BRIGHTEN THIS IMAGE
-  img{
 
- }
  h2{
      padding-top: 20px;
  }
@@ -77,5 +108,18 @@
      color: @shark;
      font-weight: bolder;
      padding-bottom: 20px;
+ }
+ @media @mobile{
+    
+    h2{
+      text-align: left;
+      padding-left: 4px;
+    }
+    p{
+      text-align: left;
+      font-size: 13px;
+      font-weight: normal;
+      padding-left: 4px;
+  }
  }
 }

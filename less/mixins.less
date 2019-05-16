@@ -1,6 +1,6 @@
 // Mixins in here
-
-.button-signup(@radius, @color, @bg, @fontsize, @align, @padding){
+@mobile: ~"(max-width: 500px)";
+.button-signup(@radius, @color, @bg, @fontsize, @align, @padding, @width){
  
     font-size: @fontsize;
     text-align: @align;
@@ -8,6 +8,7 @@
     border-radius: @radius;
     background-color: @bg;
     padding: @padding;
+    width: @width;
     &:hover{
         background-color: darken(@bg, 10%);
         cursor: pointer;

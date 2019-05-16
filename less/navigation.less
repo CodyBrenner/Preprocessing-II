@@ -8,7 +8,7 @@ nav{
     padding-bottom: 1%;
 
     h2{
-        margin-left: 26%;
+     margin-left: 26%;
         
     }
     .links{
@@ -20,4 +20,22 @@ nav{
             margin: 0px 10px 0px 10px;
         }
     }
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+     
+        h2{
+            text-align: center;
+            margin-left: 0%;
+                }
+                p{
+                    font-size: 11px;
+                    font-weight: normal;
+                }
+        .links{
+            text-align: center;
+            margin-right: 0%;
+            padding-bottom: 10px;
+        }
+      }
 }
