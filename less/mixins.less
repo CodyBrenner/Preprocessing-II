@@ -1,1 +1,16 @@
 // Mixins in here
+
+.button-signup(@radius, @color, @bg, @fontsize, @align, @padding){
+ 
+    font-size: @fontsize;
+    text-align: @align;
+    color: @color;
+    border-radius: @radius;
+    background-color: @bg;
+    padding: @padding;
+    &:hover{
+        background-color: darken(@bg, 10%);
+        cursor: pointer;
+    }
+}
+
